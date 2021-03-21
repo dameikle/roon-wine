@@ -57,27 +57,27 @@ do
 
     if [ "$arg" == "--install" ] || [ "$arg" == "-i" ]
     then
-    	clean_prefix
+      clean_prefix
       install_win32
       exit 0
     fi
 
     if [ "$arg" == "--install64" ] || [ "$arg" == "-i64" ]
     then
-		  clean_prefix
+      clean_prefix
       install_win64
       exit 0
     fi
 
     if [ "$arg" == "--prefix" ] || [ "$arg" == "-p" ]
     then
-       echo "Wine Prefix is '/home/$USER/WineRoon'"
-       exit 0
+      echo "Wine Prefix is '/home/$USER/WineRoon'"
+      exit 0
     fi
 
     if [ "$arg" == "--run" ] || [ "$arg" == "-r" ]
     then
-       run_roon
-       exit 0
+      run_roon
+      exit 0
     fi
 done
